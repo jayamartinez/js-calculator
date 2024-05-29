@@ -1,5 +1,89 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
-  font-family: Montserrat, sans-serif;
+  font-family: Verdana;
+  font-size: 24px;
+}
+
+#calculator {
+  font-size: 36px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* flex-direction: row; */
+  /* justify-content: space-between;
+  align-items: center; */
+  background-color: rgb(32, 32, 32);
+  border-radius: 20px;
+  width: 300px;
+  gap: 10px;
+  padding: 20px;
+}
+
+.miscBtn {
+  background-color: rgb(184, 184, 184);
+  color: black;
+}
+
+button.miscBtn:active {
+  background-color: rgb(220, 220, 220);
+}
+.miscBtn:hover {
+  background-color: rgb(190, 190, 190);
+}
+
+.signBtn {
+  background-color: orange;
+}
+
+.signBtn:hover,
+.signBtn:active {
+  color: orange;
+  background-color: white;
+}
+
+button#equalsBtn:active {
+  background-color: rgb(255, 199, 95);
+}
+#equalsBtn:hover {
+  background-color: rgb(255, 185, 54);
+  color: white;
+}
+
+#btn0 {
+  grid-column: span 2;
+  text-align: left;
+}
+
+#result {
+  font-size: 36px;
+  grid-column: span 4;
+  text-align: right;
+  padding: 10px;
+  color: white;
+  border-radius: 20px;
+  background-color: rgb(46, 46, 46);
+  margin-bottom: 0px;
+}
+
+#delBtn {
+  font-size: 18px;
+}
+
+button {
+  font-size: 24px;
+  border-radius: 90px;
+  border: none;
+  padding: 20px;
+  background-color: rgb(62, 62, 62);
+  color: white;
+  box-shadow: none;
+  transition: background-color 0.3s, transform 0.1s;
+}
+
+button:hover {
+  background-color: rgb(93, 93, 93);
+}
+
+button:active {
+  background-color: rgb(123, 123, 123);
 }
