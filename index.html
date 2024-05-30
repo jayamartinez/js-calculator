@@ -7,33 +7,34 @@
     <title>Calculator</title>
   </head>
   <body>
-    <h1>test</h1>
+    <h1>Simple Calculator</h1>
+    <p>% does modular divison</p>
     <div id="calculator">
-      <p id="result">0</p>
+      <input id="result" readonly />
 
-      <button class="miscBtn">C</button>
-      <button id="delBtn" class="miscBtn">Del</button>
-      <button class="miscBtn">%</button>
-      <button class="signBtn">÷</button>
+      <button class="miscBtn" onclick="clearDisplay()">C</button>
+      <button id="delBtn" class="miscBtn" onclick="displayRemove()">Del</button>
+      <button class="miscBtn" onclick="displayAdd('%')">%</button>
+      <button class="signBtn" onclick="displayAdd('/')">÷</button>
 
-      <button class="numberBtn">7</button>
-      <button class="numberBtn">8</button>
-      <button class="numberBtn">9</button>
-      <button class="signBtn">×</button>
+      <button class="numberBtn" onclick="displayAdd('7')">7</button>
+      <button class="numberBtn" onclick="displayAdd('8')">8</button>
+      <button class="numberBtn" onclick="displayAdd('9')">9</button>
+      <button class="signBtn" onclick="displayAdd('*')">×</button>
 
-      <button class="numberBtn">4</button>
-      <button class="numberBtn">5</button>
-      <button class="numberBtn">6</button>
-      <button class="signBtn">-</button>
+      <button class="numberBtn" onclick="displayAdd('4')">4</button>
+      <button class="numberBtn" onclick="displayAdd('5')">5</button>
+      <button class="numberBtn" onclick="displayAdd('6')">6</button>
+      <button class="signBtn" onclick="displayAdd('-')">-</button>
 
-      <button class="numberBtn">1</button>
-      <button class="numberBtn">2</button>
-      <button class="numberBtn">3</button>
-      <button class="signBtn">+</button>
+      <button class="numberBtn" onclick="displayAdd('1')">1</button>
+      <button class="numberBtn" onclick="displayAdd('2')">2</button>
+      <button class="numberBtn" onclick="displayAdd('3')">3</button>
+      <button class="signBtn" onclick="displayAdd('+')">+</button>
 
-      <button id="btn0" class="numberBtn">0</button>
-      <button class="numberBtn">.</button>
-      <button id="equalsBtn" class="signBtn">=</button>
+      <button id="btn0" class="numberBtn" onclick="displayAdd('0')">0</button>
+      <button class="numberBtn" onclick="displayAdd('.')">.</button>
+      <button id="equalsBtn" class="signBtn" onclick="calculate()">=</button>
     </div>
     <script src="app.js"></script>
   </body>
